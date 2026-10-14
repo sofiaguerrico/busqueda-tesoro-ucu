@@ -657,7 +657,16 @@
     abrirEscolaridad();
   }
 
+  // AR.js pierde el marcador por un cuadro o dos aunque siga en cámara;
+  // esperamos un poco antes de darlo por perdido para que no parpadee.
+  const GRACIA_LOST_MS = 700;
+  let lostTimer = null;
+
   function onFound(id) {
+    clearTimeout(lostTimer);
+    lostTimer = null;
+    if (actual === id) return;
+    if (actual === 'pingpong') ppPausar();
     actual = id;
     window.Tex.refrescar();
     if (!S) return;
@@ -668,6 +677,13 @@
   }
 
   function onLost(id) {
+    if (actual !== id) return;
+    clearTimeout(lostTimer);
+    lostTimer = setTimeout(() => perdido(id), GRACIA_LOST_MS);
+  }
+
+  function perdido(id) {
+    lostTimer = null;
     if (actual !== id) return;
     actual = null;
     if (id === 'pingpong') ppPausar();
