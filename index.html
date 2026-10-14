@@ -39,8 +39,9 @@
     <a-entity light="type: directional; intensity: 0.9" position="1 3 2"></a-entity>
 
     <a-marker id="m-pingpong" data-materia="pingpong" type="pattern" url="markers/pingpong.patt"
-              emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
-      <a-entity class="g-juego">
+              emitevents="true" smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
+      <!-- Achicada y centrada: la mesa con el rival mide ~2,4 marcadores y temblaba mucho. -->
+      <a-entity class="g-juego" scale="0.55 0.55 0.55" position="0 0 0.13">
         <a-box position="0 0.03 0" width="1.1" height="0.06" depth="1.9" color="#0f5c3a"></a-box>
         <a-plane position="0 0.062 0" rotation="-90 0 0" width="0.015" height="1.9" material="shader: flat; color: #ffffff"></a-plane>
         <a-plane position="0 0.062 0.94" rotation="-90 0 0" width="1.1" height="0.02" material="shader: flat; color: #ffffff"></a-plane>
@@ -67,7 +68,7 @@
     </a-marker>
 
     <a-marker id="m-aulamagna" data-materia="aulamagna" type="pattern" url="markers/aulamagna.patt"
-              emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
+              emitevents="true" smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
       <a-entity class="g-juego">
         <a-box position="0 0.03 0" width="1.9" height="0.06" depth="1.3" color="#6b2f1a"></a-box>
         <a-plane position="0 0.064 -0.05" rotation="-90 0 0" width="1.72" height="1.0" material="shader: flat; color: #111111"></a-plane>
@@ -86,7 +87,7 @@
     </a-marker>
 
     <a-marker id="m-cantina" data-materia="cantina" type="pattern" url="markers/cantina.patt"
-              emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
+              emitevents="true" smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
       <a-entity class="g-juego">
         <a-cylinder position="0 0.02 0" radius="0.55" height="0.03" color="#fafafa"></a-cylinder>
         <a-cylinder position="0 0.037 0" radius="0.46" height="0.004" color="#dfe5ee"></a-cylinder>
@@ -109,7 +110,7 @@
     </a-marker>
 
     <a-marker id="m-biblioteca" data-materia="biblioteca" type="pattern" url="markers/biblioteca.patt"
-              emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
+              emitevents="true" smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
       <a-entity class="g-juego">
         <a-box position="0 0.05 0" width="0.72" height="0.1" depth="0.5" rotation="0 6 0" color="#1e3a8a"></a-box>
         <a-box position="0.02 0.15 0" width="0.68" height="0.1" depth="0.48" rotation="0 -9 0" color="#7f1d1d"></a-box>
