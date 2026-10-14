@@ -6,26 +6,26 @@
     pingpong: {
       icono: '🏓',
       nombre: 'Educación Física Universitaria',
-      acertijo: 'Acá se viene a encontrarse, pero muchos terminan jugando. Una red parte la mesa en dos.',
-      pista: 'Salón de Encuentros, en la mesa de ping pong.'
+      acertijo: 'Subí bien alto en el San José: cuarto piso. Donde todos se tiran a descansar, alguien dejó una paleta.',
+      pista: 'Edificio San José, piso 4, en los sillones.'
     },
     aulamagna: {
       icono: '🎤',
       nombre: 'Oratoria y Presentación',
-      acertijo: 'El escenario más grande del edificio. Los que presentan nunca miran lo que hay debajo de su mesa.',
-      pista: 'Aula Magna: mirá abajo de la mesa del presentador.'
+      acertijo: 'En el segundo piso hay un escenario con butacas. Ahí se presenta frente a todos.',
+      pista: 'Auditorio del piso 2.'
     },
     cantina: {
       icono: '🥐',
       nombre: 'Nutrición Estudiantil',
-      acertijo: 'Ningún parcial se rinde con la panza vacía. Buscame justo cuando te toque pagar.',
-      pista: 'Cantina, junto a la caja.'
+      acertijo: 'Ningún parcial se rinde con la panza vacía. Buscame donde se va a comer algo.',
+      pista: 'En la cantina.'
     },
     biblioteca: {
       icono: '📚',
       nombre: 'Investigación Aplicada',
-      acertijo: 'Donde el silencio es ley y hay salas que se reservan. Pedí una y mirá el mostrador.',
-      pista: 'Biblioteca, en el mostrador donde se piden las salas.'
+      acertijo: 'Acá se dicta clase, se toman parciales y alguien se olvidó un libro. Buscalo donde el piso es tres y la cuenta recién empieza.',
+      pista: 'Piso 3, salón 301.'
     }
   };
 
@@ -33,7 +33,7 @@
     { q: '¿Contra quién jugaste al ping pong?', ok: 'El Invicto del Salón', no: ['El Rey de la Red', 'La Paleta Veloz'] },
     { q: '¿Cuál fue la conclusión de tu presentación?', ok: 'Funciona en mi máquina', no: ['Hay que agregar más tests', 'El deadline era ayer'] },
     { q: '¿Cuántos mordiscos le diste a la medialuna?', ok: '5', no: ['3', '7'] },
-    { q: '¿Qué palabra apareció en el libro de la biblioteca?', ok: 'CONSTANCIA', no: ['PACIENCIA', 'EXCELENCIA'] }
+    { q: '¿Qué palabra apareció en el libro del salón 301?', ok: 'CONSTANCIA', no: ['PACIENCIA', 'EXCELENCIA'] }
   ];
 
   const TPL_TRIBUNAL = `
@@ -373,7 +373,7 @@
       Sfx.aplausos(2.5);
       toast('👏 👏 👏', 1800);
       AU.slide = 4;
-      setAccion('El Aula Magna te aplaude de pie…', []);
+      setAccion('El auditorio te aplaude de pie…', []);
       setTimeout(() => aprobar('aulamagna'), 1800);
       return;
     }
@@ -429,7 +429,7 @@
     aulamagna: {
       accion() {
         if (AU.slide === 0) {
-          return setAccion('Subiste al escenario del Aula Magna. Presentá tus <b>3 diapositivas</b>.',
+          return setAccion('Subiste al escenario del auditorio. Presentá tus <b>3 diapositivas</b>.',
             [{ t: '🎤 Empezar presentación', cls: 'primario grande', fn: auSiguiente }]);
         }
         if (AU.slide < 3) {
@@ -440,7 +440,7 @@
           return setAccion('Última diapositiva. ¿Te animás a cerrar?',
             [{ t: '🙇 Terminar presentación', cls: 'primario grande', fn: auSiguiente }]);
         }
-        setAccion('El Aula Magna te aplaude de pie…', []);
+        setAccion('El auditorio te aplaude de pie…', []);
       }
     },
     cantina: {

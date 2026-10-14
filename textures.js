@@ -147,7 +147,7 @@
 
   function dibujarTodo(nombre, materias) {
     rival();
-    slide('tx-slide0', 'AULA MAGNA', 'Tu presentación', 'Tocá «Empezar presentación» cuando estés listo', true);
+    slide('tx-slide0', 'AUDITORIO', 'Tu presentación', 'Tocá «Empezar presentación» cuando estés listo', true);
     slide('tx-slide1', '1 / 3', 'Mi tesis', 'Un proyecto que va a cambiar el mundo (o al menos aprobar)', false);
     slide('tx-slide2', '2 / 3', 'Conclusión:', 'Funciona en mi máquina', false);
     slide('tx-slide3', '3 / 3', '¿Preguntas?', '(por favor no)', true);

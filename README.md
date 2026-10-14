@@ -32,10 +32,10 @@ imprimir/            → NO subir: marcadores para imprimir
 
 | Lugar | Archivo | Letra |
 |---|---|---|
-| Salón de Encuentros · mesa de ping pong | pingpong | Z |
-| Aula Magna · abajo de la mesa del presentador | aulamagna | A |
-| Cantina · junto a la caja | cantina | G |
-| Biblioteca · mostrador de reserva de salas | biblioteca | J |
+| Edificio San José · piso 4, en los sillones | pingpong | Z |
+| Auditorio del piso 2 | aulamagna | A |
+| Cantina | cantina | G |
+| Piso 3 · salón 301 | biblioteca | J |
 
 Imprimir `marcadores-para-imprimir.pdf` al 100 %, plastificar y no tapar el borde blanco.
 
