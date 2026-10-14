@@ -1,0 +1,6 @@
+{
+  "mimeTypes": {
+    ".patt": "text/plain",
+    ".dat": "application/octet-stream"
+  }
+}
