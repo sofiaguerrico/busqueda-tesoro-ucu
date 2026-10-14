@@ -111,6 +111,15 @@ body {
 }
 .intro-card input:focus { outline: none; border-color: var(--gold); }
 .intro-card .btn { width: 100%; }
+.aviso {
+  margin: 0 0 18px;
+  padding: 10px 12px;
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  background: #fdf1cf;
+  font-size: 14px;
+  line-height: 1.4;
+}
 .intro-card .nota { margin: 14px 0 0; font-size: 13px; color: var(--muted); }
 
 #hud {
